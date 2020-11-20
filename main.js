@@ -4,7 +4,7 @@ var app = new Vue({
     el: "#root",
     data: {
         email: [],
-        titolo: "Qui 10 email scelte per te: "
+        titolo: " "
     },
     mounted() {
 
@@ -15,9 +15,12 @@ var app = new Vue({
                 .then(function(response) {
                     console.log(response.data);
                     self.email.push(response.data.response);
+                    self.titolo = "Qui 10 email scelte per te:";
 
                 });
         }
+
+
 
     }
 
