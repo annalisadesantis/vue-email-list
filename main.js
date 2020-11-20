@@ -15,8 +15,8 @@ var app = new Vue({
                 .then(function(response) {
                     console.log(response.data);
                     self.email.push(response.data.response);
-                    self.titolo = "Qui 10 email scelte per te:";
 
+                    self.titolo = `Qui ${self.email.length} email scelte per te:`;
                 });
         }
 
