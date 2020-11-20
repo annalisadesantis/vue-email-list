@@ -12,6 +12,7 @@
     </head>
     <body>
         <div id="root">
+            <h1 v-if="email.length == 10"> {{ titolo }}</h1>
             <div v-for="element in email" v-if="email.length == 10">
                 {{ element }}
             </div>

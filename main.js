@@ -3,7 +3,8 @@
 var app = new Vue({
     el: "#root",
     data: {
-        email: []
+        email: [],
+        titolo: "Qui 10 email scelte per te: "
     },
     mounted() {
 
@@ -17,7 +18,6 @@ var app = new Vue({
 
                 });
         }
-
 
     }
 
